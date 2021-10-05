@@ -1,6 +1,6 @@
-import { Todo } from "./Todo"
+import Todo from "./Todo"
 
-export const TodoList = ({todos, toggleTodo}) => {
+export default function TodoList({todos, toggleTodo}) {
   return (
     todos.map(todo => {
       return <Todo key={todo.id} todo={todo} toggleTodo={toggleTodo} />
