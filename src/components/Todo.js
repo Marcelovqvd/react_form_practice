@@ -1,8 +1,13 @@
-export const Todo = ({todo}) => {
+export const Todo = ({todo, toggleTodo}) => {
+
+  function handleTodoClick() {
+    toggleTodo(todo.id);
+  }
+
   return (
     <div>
       <div>
-        <input type="checkbox" checked={todo.complete} />
+        <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
         {todo.name}
       </div>
     </div>
