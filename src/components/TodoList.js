@@ -1,8 +1,8 @@
 import { Todo } from "./Todo"
 
-export const TodoList = (props) => {
+export const TodoList = ({todos}) => {
   return (
-    props.todos.map(todo => {
+    todos.map(todo => {
       return <Todo key={todo.id} todo={todo} />
     })
   )
