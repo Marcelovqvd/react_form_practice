@@ -1,3 +1,3 @@
 # Practicing ReactJS
 
-Todo list features
+Todo list
